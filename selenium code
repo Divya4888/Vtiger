@@ -1,0 +1,15 @@
+package selenium;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GetTittle 
+{
+public static void main(String[] args) 
+{
+	ChromeDriver d= new ChromeDriver();
+	d.manage().window().maximize();
+    d.get("https://www.flipcart.com/");
+    String ele = d.getTitle();
+    System.out.println(ele);
+}
+}
