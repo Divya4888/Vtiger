@@ -11,5 +11,6 @@ public static void main(String[] args)
     d.get("https://www.flipcart.com/");
     String ele = d.getTitle();
     System.out.println(ele);
+    d.quit();
 }
 }
